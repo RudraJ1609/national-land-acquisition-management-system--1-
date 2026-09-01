@@ -1,0 +1,6 @@
+{
+  "name": "National Land Acquisition Management System",
+  "description": "Government of India portal for managing and monitoring national land acquisition workflows across Central, State, District, Requiring Body, and Citizen levels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

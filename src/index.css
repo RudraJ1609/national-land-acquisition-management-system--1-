@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+:root {
+  --gov-navy: #1B365D;
+  --gov-navy-dark: #12243f;
+  --gov-accent: #C5A059;
+  --gov-accent-hover: #b08d48;
+  --gov-light: #F8F9FA;
+  --gov-border: #D1D5DB;
+}
+
+@layer base {
+  body {
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--gov-light);
+    color: #333333;
+  }
+
+  h1, h2, h3, .govt-heading {
+    font-family: 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    color: var(--gov-navy);
+  }
+
+  .emblem-title {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Sleek Interface Theme Utility Classes */
+.bg-gov-navy {
+  background-color: var(--gov-navy);
+}
+
+.text-gov-navy {
+  color: var(--gov-navy);
+}
+
+.border-gov-navy {
+  border-color: var(--gov-navy);
+}
+
+.bg-gov-accent {
+  background-color: var(--gov-accent);
+}
+
+.text-gov-accent {
+  color: var(--gov-accent);
+}
+
+.border-gov-accent {
+  border-color: var(--gov-accent);
+}
+
+.bg-gov-light {
+  background-color: var(--gov-light);
+}
+
+.border-gov-border {
+  border-color: var(--gov-border);
+}
+
+.sleek-card {
+  background: #ffffff;
+  border: 1px solid var(--gov-border);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.sleek-notice {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid var(--gov-border);
+  border-left: 4px solid var(--gov-navy);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.sleek-notice-gold {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid var(--gov-border);
+  border-left: 4px solid var(--gov-accent);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.sleek-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--gov-border);
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #fafafa;
+  color: #1f2937;
+  transition: all 0.15s ease-in-out;
+}
+
+.sleek-input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: var(--gov-navy);
+  box-shadow: 0 0 0 2px rgba(27, 54, 93, 0.15);
+}
+
+.sleek-btn-primary {
+  background-color: var(--gov-navy);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.sleek-btn-primary:hover {
+  background-color: #142946;
+}
+
+.sleek-btn-accent {
+  background-color: var(--gov-accent);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.sleek-btn-accent:hover {
+  background-color: var(--gov-accent-hover);
+}
+
+.sleek-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.sleek-table th {
+  text-align: left;
+  padding: 10px 12px;
+  background-color: #e2e8f0;
+  color: #475569;
+  font-weight: 600;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.sleek-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.role-tag {
+  font-weight: bold;
+  color: var(--gov-navy);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Custom scrollbars for data-dense tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+
